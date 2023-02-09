@@ -1,0 +1,245 @@
+body {
+    display: flex;
+    flex-direction : column ;
+    justify-content : space-between ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+
+img{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(250, 247, 247);
+    border-top: 3px solid black;
+    border-bottom: #ccc 1px solid;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.current-page {
+    font-weight: bold;
+}
+
+.link{
+    color: blue;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+.career{
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+section{
+    display: flex;
+    
+}
+
+.overlay{
+    border-left: 1px solid #ccc;
+    height: 550px;
+    position: absolute;
+    left: 77%;
+    margin-left: -150px;
+    bottom: 70px;
+    display: none
+}
+
+
+.picture{
+    flex: 1;
+    height: 40em;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.picture-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 4em;
+}
+
+.content-side{
+    flex: 3;
+    padding-left: 100px;
+    border-left: 1px solid #ccc;
+    padding-bottom: 200px;
+}
+
+.header{
+    padding: 20px 20px 20px 0px;
+    font-size: 50px;
+    font-weight: lighter;
+    color: rgb(52, 53, 54);
+}
+
+/*Index*/
+.about-me{
+    padding-top: 0em;
+    width: 600px;
+    font-size: 18px;
+}
+
+.index-checkpoint{
+    padding: 20px 20px 20px 0px;
+    font-size: 18px;
+}
+
+.index-table{
+    padding: 0px 20px 20px 0px;
+    height: 30%;
+    width: 60%;
+}
+/**/
+
+/*Experience*/
+.experience-table{
+    padding-top: 0em;
+    width: 600px;
+    font-size: 20px;
+}
+
+.exp-pad{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.experience-table{
+    padding: 0px 20px 20px 0px;
+    height: 30%;
+    width: 60%;
+}
+/**/
+
+/*Education*/
+.edu-table{
+    padding: 0px 20px 20px 0px;
+    height: 30%;
+    width: 60%;
+    font-size: 20px;
+}
+/**/
+
+/*Interests*/
+.interests-table{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.pad-list{
+    padding: 10px;
+}
+/**/
+
+/*Skills*/
+.skills-table{
+    padding: 0px 20px 20px 0px;
+    height: 30%;
+    width: 60%;
+    font-size: 20px;
+}
+
+.skills-pad{
+    padding: 20px;
+    width: 40px;
+}
+
+progress {
+    width: 500px;
+}
+
+.bar{
+    padding-left: 40px;
+}
+
+.level{
+    text-align: left;
+    padding-left: 40px;
+}
+/**/
+
+.footer {
+    background-color: rgb(250, 247, 247);
+    padding: 10px;
+    text-align: center;
+    border-top: #ccc 1px solid;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+@media only screen and (max-width: 850px){
+    section{
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: block;
+        padding: 0;
+        text-align: row;
+    }
+  
+    .content-side {
+        align-items: center;
+        padding-left: 0.5em;
+
+    }
+    .picture{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 15px;
+        align-items: center;
+    }
+    
+    .picture-content{
+        align-items: center;
+        padding: 20px;
+    }
+    .header{
+        padding-top: 0.5em;
+    }
+    .index-table{
+        width: 100%;
+    }
+
+
+}
+
